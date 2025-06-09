@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "savemonies",
+  "info": {
+    "singularName": "savemoney",
+    "pluralName": "savemonies",
+    "displayName": "savemoney",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namelistsave": {
+      "type": "string"
+    },
+    "amontsave": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "savemonies"
+    },
+    "datesave": {
+      "type": "date"
+    }
+  }
+}

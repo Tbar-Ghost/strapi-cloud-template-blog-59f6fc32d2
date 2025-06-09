@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "incomes",
+  "info": {
+    "singularName": "income",
+    "pluralName": "incomes",
+    "displayName": "income",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namelist": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "incomes"
+    },
+    "amont": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

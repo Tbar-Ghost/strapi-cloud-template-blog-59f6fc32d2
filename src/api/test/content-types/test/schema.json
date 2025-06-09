@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "nextjsstrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "passworduser": {
+      "type": "string"
+    },
+    "incomes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::income.income",
+      "mappedBy": "nextjsstrapis"
+    },
+    "expenses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::expense.expense",
+      "mappedBy": "nextjsstrapis"
+    },
+    "savemonies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::savemoney.savemoney",
+      "mappedBy": "nextjsstrapis"
+    },
+    "listbyuser": {
+      "type": "json"
+    },
+    "incomeforstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::incomeforstrapi.incomeforstrapi",
+      "mappedBy": "nextjsstrapis"
+    },
+    "expenseforstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::expenseforstrapi.expenseforstrapi",
+      "mappedBy": "nextjsstrapis"
+    },
+    "saveforstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::saveforstrapi.saveforstrapi",
+      "mappedBy": "nextjsstrapis"
+    },
+    "dropdownstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::dropdownstrapi.dropdownstrapi",
+      "mappedBy": "nextjsstrapis"
+    }
+  }
+}

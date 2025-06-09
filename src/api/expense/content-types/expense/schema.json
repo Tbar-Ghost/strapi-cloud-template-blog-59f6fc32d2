@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenses",
+  "info": {
+    "singularName": "expense",
+    "pluralName": "expenses",
+    "displayName": "expense",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namelistexpense": {
+      "type": "string"
+    },
+    "amontexpense": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "expenses"
+    },
+    "dateexpense": {
+      "type": "date"
+    }
+  }
+}

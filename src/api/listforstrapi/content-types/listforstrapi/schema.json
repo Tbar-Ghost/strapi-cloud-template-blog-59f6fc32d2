@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listforstrapis",
+  "info": {
+    "singularName": "listforstrapi",
+    "pluralName": "listforstrapis",
+    "displayName": "Nameforstrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namestrapi": {
+      "type": "string"
+    }
+  }
+}

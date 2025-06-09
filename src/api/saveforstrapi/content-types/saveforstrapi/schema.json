@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saveforstrapis",
+  "info": {
+    "singularName": "saveforstrapi",
+    "pluralName": "saveforstrapis",
+    "displayName": "Saveforstrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namesavestrapi": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "saveforstrapis"
+    },
+    "amontsavestrapi": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "detailsaveforstrapi": {
+      "type": "string"
+    }
+  }
+}

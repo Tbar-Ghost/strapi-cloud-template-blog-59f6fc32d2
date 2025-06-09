@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "incomeforstrapis",
+  "info": {
+    "singularName": "incomeforstrapi",
+    "pluralName": "incomeforstrapis",
+    "displayName": "Incomeforstrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nameincomestrapi": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "incomeforstrapis"
+    },
+    "amontincomeforstrapi": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "detailincomeforstrapi": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dropdownstrapis",
+  "info": {
+    "singularName": "dropdownstrapi",
+    "pluralName": "dropdownstrapis",
+    "displayName": "dropdownstrapi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namedrop": {
+      "type": "string"
+    },
+    "typedrop": {
+      "type": "string"
+    },
+    "keydrop": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "dropdownstrapis"
+    }
+  }
+}

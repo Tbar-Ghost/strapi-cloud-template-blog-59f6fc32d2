@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenseforstrapis",
+  "info": {
+    "singularName": "expenseforstrapi",
+    "pluralName": "expenseforstrapis",
+    "displayName": "Expenseforstrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nameexpensestrapi": {
+      "type": "string"
+    },
+    "nextjsstrapis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "inversedBy": "expenseforstrapis"
+    },
+    "amontexpensestrapi": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "detailexpensestrapi": {
+      "type": "string"
+    }
+  }
+}
